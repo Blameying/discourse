@@ -6395,7 +6395,7 @@
     return true;
   };
   // Process autolinks '<protocol:...>'
-  /*eslint max-len:0*/  var EMAIL_RE = /^([a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*)$/;
+  /*eslint max-len:0*/  var EMAIL_RE = /^([a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@(connect\.)?(hkust-gz\.edu\.cn|ust\.hk)$/;
   var AUTOLINK_RE = /^([a-zA-Z][a-zA-Z0-9+.\-]{1,31}):([^<>\x00-\x20]*)$/;
   var autolink = function autolink(state, silent) {
     var url, fullUrl, token, ch, start, max, pos = state.pos;

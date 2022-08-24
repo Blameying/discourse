@@ -6,6 +6,6 @@ class EmailAddressValidator
   end
 
   def self.email_regex
-    /\A[a-zA-Z0-9!#\$%&'*+\/=?\^_`{|}~\-]+(?:\.[a-zA-Z0-9!#\$%&'\*+\/=?\^_`{|}~\-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-]*[a-zA-Z0-9])?$\z/
+    /\A([\w.%+\-]+)@(connect\.)?(hkust-gz\.edu\.cn|ust\.hk){1}\z/
   end
 end
