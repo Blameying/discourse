@@ -648,6 +648,7 @@ class UsersController < ApplicationController
     params.require(:invite_code) if SiteSetting.require_invite_code
     params.permit(:user_fields)
     params.permit(:external_ids)
+    email_filter = /\A([\w.%+\-]+)@(connect\.)?(hkust-gz\.edu\.cn|ust\.hk){1}\z/
 
     unless SiteSetting.allow_new_registrations
       return fail_with("login.new_registrations_disabled")
@@ -655,6 +656,10 @@ class UsersController < ApplicationController
 
     if params[:password] && params[:password].length > User.max_password_length
       return fail_with("login.password_too_long")
+    end
+
+    if not email_filter.match(params[:email])
+      return fail_with("login.not_welcome")
     end
 
     if params[:email].length > 254 + 1 + 253

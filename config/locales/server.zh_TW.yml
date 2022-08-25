@@ -1707,6 +1707,7 @@ zh_TW:
     authenticator_error_no_valid_email: "關聯%{account}的賬戶沒有優秀的郵件地址。你可能需要用不同的郵件地址配置你的賬戶。"
     new_registrations_disabled: "現在不允許註冊新的帳戶"
     password_too_long: "密碼不能超過 200 個字符。"
+    not_welcome: "请使用港科大清水湾或者广州邮箱"
     email_too_long: "你輸入的郵件太長了。郵箱名不得超過 254 字元，域名必須不超過 253 字元。"
     reserved_username: "該使用者名不可被使用。"
     missing_user_field: "你還沒有填寫完所有使用者字段"

@@ -2595,6 +2595,7 @@ en:
     authenticator_error_no_valid_email: "No email addresses associated with %{account} are allowed. You may need to configure your account with a different email address."
     new_registrations_disabled: "New account registrations are not allowed at this time."
     password_too_long: "Passwords are limited to 200 characters."
+    not_welcome: "Please use HKUST or HKUST(GZ) email."
     email_too_long: "The email you provided is too long. Mailbox names must be no more than 254 characters, and domain names must be no more than 253 characters."
     wrong_invite_code: "The invite code you entered was incorrect."
     reserved_username: "That username is not allowed."
